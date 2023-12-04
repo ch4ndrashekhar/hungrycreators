@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Form</title>
+    <link rel="stylesheet" href="t1.css">
+</head>
+
+<body>
+<form id="resumeForm">
+    <h1>RESUME</h1> 
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required title="Enter Your Name">
+    
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required  title="Enter Your email id">
+
+    <label for="phone">Phone No:</label>
+    <input type="tel" id="phone" name="phone" required  title="Enter Your Phone No">
+
+    <label for="Skills">Skills:</label>
+    <input type="tel" id="Skills" name="Skills" required  title="Enter Your Skills">
+
+    <label for="education">Education:</label>
+    <input type="text" id="education" name="education" required >
+
+    <label for="experience">Work Experience:</label>
+    <input type="text" id="experience" name="experience" required>
+
+   
+
+<form id="uploadForm" enctype="multipart/form-data">
+    <label for="photo">Select Photo:</label>
+    <input type="file" id="photo" name="photo" accept="image/*" required>
+
+    <button type="button" onclick="uploadPhoto()">Upload Photo</button>
+<br>
+<br>
+    <button type="button" onclick="submitForm()">Submit</button>
+</form>
+
+
+<div id="outputSheet"></div>
+
+<script src="j1.js"></script>
+
+</body>
+</html>
